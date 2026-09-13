@@ -17,6 +17,7 @@
 </nav>
 <hr>
  
+<main>
 <img src="images/cover.png" width="100%" alt="Cover Docker dan NGINX">
  
 <table cellpadding="4">
@@ -32,11 +33,11 @@
 
 <hr>
 
-<p>Deploying a web application doesn’t need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.<br>
-In this blog, I’ll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server</p>
+<p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.<br>
+In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server</p>
 
 <p><b>Step 1: Setup Docker</b><br>
-First, let’s set up Docker. I’m using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
+First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
 
 <pre><code>FROM node:20-alpine
 WORKDIR /app
@@ -64,5 +65,7 @@ By containerizing your app, setting up NGINX as a reverse proxy, and linking eve
 </tr>
 </table>
  
+</main>
+
 </body>
 </html>
