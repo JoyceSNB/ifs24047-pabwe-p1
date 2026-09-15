@@ -14,6 +14,7 @@
       <summary>Menu Navigasi</summary>
       <a href="index.html" title="Buka halaman IMDb Top 3 Movies">IMDb Top 3 Movies</a>&nbsp;|&nbsp;
       <a href="blog.html" title="Buka halaman Dev Blogs">Dev Blogs</a>&nbsp;|&nbsp;
+      <a href="blog-detail.html" title="Buka halaman detail Dev Blogs">Blog Detail</a>&nbsp;|&nbsp;
       <a href="form.html" title="Buka halaman Form Pendaftaran Akun">Form Pendaftaran Akun</a>&nbsp;|&nbsp;
       <a href="cv.html" title="Buka halaman Curriculum Vitae">Curriculum Vitae (CV)</a>
     </details>
@@ -25,10 +26,10 @@
     <img src="images/cover.png" width="100%" alt="Cover Docker dan NGINX">
 
     <!-- Info penulis -->
-    <table cellpadding="4">
+    <table>
       <tr>
         <td><img src="images/avatar-vishnu.png" width="32" height="32" alt="Vishnu Satheesh"></td>
-        <td><span><b>Vishnu Satheesh</b></span><br><span>Posted on May 31</span></td>
+        <td><span><b>Vishnu Satheesh</b></span><br /><span>Posted on May 31</span></td>
       </tr>
     </table>
 
@@ -39,10 +40,10 @@
     <hr>
 
     <!-- Isi artikel -->
-    <p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.<br>
+    <p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.<br />
     In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server</p>
 
-    <p><b>Step 1: Setup Docker</b><br>
+    <p><b>Step 1: Setup Docker</b><br />
     First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
 
     <pre><code>FROM node:20-alpine
@@ -52,11 +53,11 @@ RUN npm install
 COPY . .
 CMD [ "npm", "start" ]</code></pre>
 
-    <p><b>Step 2: Build and Run the Docker Container (on your server)</b><br>
+    <p><b>Step 2: Build and Run the Docker Container (on your server)</b><br />
     Once you've created your Dockerfile, the next step is to build your Docker image and run it to make sure everything is working as expected.</p>
 
-    <p><b>Conclusion</b><br>
-    Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it's quite manageable.<br>
+    <p><b>Conclusion</b><br />
+    Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it's quite manageable.<br />
     By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.</p>
 
     <p>Read the full article on dev.to: <a href="https://dev.to/vishnusatheesh/how-to-deploy-a-web-application-using-docker-and-nginx-on-your-own-server-3mll">original article by Vishnu Satheesh</a>.</p>
@@ -65,7 +66,7 @@ CMD [ "npm", "start" ]</code></pre>
 
     <!-- Kolom komentar -->
     <p><b>Top comments (0)</b></p>
-    <table cellpadding="4">
+    <table>
       <tr>
         <td><img src="images/avatar-komentar.png" width="32" height="32" alt="foto profil"></td>
         <td><textarea rows="3" placeholder="Add to the discussion"></textarea></td>

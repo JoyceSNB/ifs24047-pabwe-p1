@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Form Pendaftaran Akun - formulir pendaftaran untuk membuat akun baru.">
-  <title>Form Pendaftaran Akun</title>
+  <meta name="description" content="Curriculum Vitae Joyce Stephanie Naibaho - mahasiswa Informatika Institut Teknologi Del.">
+  <title>Curriculum Vitae - Joyce Stephanie Naibaho</title>
 </head>
 <body>
 
@@ -14,6 +14,7 @@
       <summary>Menu Navigasi</summary>
       <a href="index.html" title="Buka halaman IMDb Top 3 Movies">IMDb Top 3 Movies</a>&nbsp;|&nbsp;
       <a href="blog.html" title="Buka halaman Dev Blogs">Dev Blogs</a>&nbsp;|&nbsp;
+      <a href="blog-detail.html" title="Buka halaman detail Dev Blogs">Blog Detail</a>&nbsp;|&nbsp;
       <a href="form.html" title="Buka halaman Form Pendaftaran Akun">Form Pendaftaran Akun</a>&nbsp;|&nbsp;
       <a href="cv.html" title="Buka halaman Curriculum Vitae">Curriculum Vitae (CV)</a>
     </details>
@@ -21,55 +22,94 @@
   <hr>
 
   <main>
-    <h1>Form Pendaftaran Akun</h1>
+    <!-- Layout 2 kolom: kiri Pendidikan & Pengalaman, kanan Identitas & Keahlian -->
+    <table width="100%">
+      <tr>
+        <td width="50%">
 
-    <form>
-      <fieldset>
-        <legend>Daftar Akun</legend>
+          <img src="images/foto_joyce.webp" width="200" height="226" alt="Foto Profil">
 
-        <!-- Nama lengkap: wajib diisi -->
-        <p><label for="nama_lengkap">Nama Lengkap:</label> <input type="text" name="nama_lengkap" id="nama_lengkap" required></p>
+          <h2>Pendidikan</h2>
+          <hr>
+          <ul>
+            <li><b>Informatika</b> | IPK: 3.66/4.00<br />
+            Institut Teknologi Del (2024 - Sekarang)
+              <ul>
+                <li>SMAN 2 Medan</li>
+                <li>SMPN 10 Medan</li>
+                <li>SD HKBP Padang Bulan</li>
+              </ul>
+            </li>
+          </ul>
 
-        <!-- Jenis kelamin: wajib pilih salah satu -->
-        <p>Jenis Kelamin:
-          <input type="radio" name="jenis_kelamin" id="lk" required><label for="lk">Laki-Laki</label>
-          <input type="radio" name="jenis_kelamin" id="pr"><label for="pr">Perempuan</label>
-        </p>
+          <h2>Pengalaman</h2>
+          <hr>
+          <p><b>Anggota Komisi A - Administrasi dan Sekretariat</b> | Organisasi<br />
+          Majelis Permusyawaratan Mahasiswa (MPM), Institut Teknologi Del (Februari 2026 - Sekarang)</p>
 
-        <!-- Tempat & tanggal lahir: wajib diisi -->
-        <p><label for="tempat_lahir">Tempat Lahir:</label> <input type="text" name="tempat_lahir" id="tempat_lahir" required></p>
+          <p><b>Anggota Komite Konsumsi</b> | Kepanitiaan<br />
+          Perayaan Natal Epiphania, Institut Teknologi Del (Jan 2026)</p>
 
-        <p><label for="tanggal_lahir">Tanggal Lahir:</label> <input type="date" name="tanggal_lahir" id="tanggal_lahir" required></p>
+        </td>
+        <td width="50%">
 
-        <!-- Agama: wajib pilih -->
-        <p><label for="agama">Agama:</label>
-          <select name="agama" id="agama" required>
-            <option value="">--- Pilih Agama ---</option>
-            <option value="islam">Islam</option>
-            <option value="katolik">Katolik</option>
-            <option value="protestan">Protestan</option>
-            <option value="hindu">Hindu</option>
-            <option value="buddha">Buddha</option>
-            <option value="konghucu">Konghucu</option>
-          </select>
-        </p>
+          <h1>Joyce Stephanie Naibaho</h1>
+          <hr>
+          <h3>Sarjana Informatika</h3>
 
-        <!-- Hobi: opsional, boleh pilih lebih dari satu -->
-        <p>Hobi:
-          <input type="checkbox" name="hobi" value="olahraga" id="h1"><label for="h1">Olahraga</label>
-          <input type="checkbox" name="hobi" value="membaca" id="h2"><label for="h2">Membaca</label>
-          <input type="checkbox" name="hobi" value="ngoding" id="h3"><label for="h3">Ngoding</label>
-        </p>
+          <h6>Email: joycestephanienaibaho@gmail.com</h6>
+          <h6>WA: +62 858 0530 9021</h6>
 
-        <!-- Password: wajib diisi, minimal 8 karakter -->
-        <p><label for="password">Password:</label> <input type="password" name="password" id="password" required minlength="8"></p>
+          <p>Mahasiswa Informatika di Institut Teknologi Del, aktif di Majelis Permusyawaratan Mahasiswa (MPM) serta memiliki minat di bidang machine learning, UI/UX design, dan pengembangan web.</p>
 
-        <!-- Persetujuan: wajib dicentang sebelum mendaftar -->
-        <p><input type="checkbox" name="persetujuan" id="setuju" required><label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label></p>
+          <h2>Keahlian</h2>
+          <hr>
 
-        <p><input type="reset" value="Reset"> <input type="submit" value="Submit"></p>
-      </fieldset>
-    </form>
+          <p><b>Programming</b></p>
+          <ul>
+            <li>Java</li>
+            <li>SQL</li>
+          </ul>
+
+          <p><b>Framework &amp; Tools</b></p>
+          <ul>
+            <li>Spring Boot</li>
+            <li>PostgreSQL</li>
+            <li>Figma</li>
+            <li>Microsoft Excel, Word, PowerPoint</li>
+          </ul>
+
+          <p><b>Bidang Minat</b></p>
+          <ul>
+            <li>Machine Learning</li>
+            <li>UI/UX Design</li>
+            <li>Data Analysis</li>
+          </ul>
+
+        </td>
+      </tr>
+    </table>
+
+    <!-- Sertifikat dan Portfolio: selebar halaman, di bawah layout 2 kolom -->
+    <h2>Sertifikat</h2>
+    <hr>
+    <ol>
+      <li>Linear Models in Machine Learning: Fundamentals and Applications (Agustus 2026)</li>
+      <li>National AI &amp; Deep Learning Acceleration Bootcamp - Advanced Level, Nalara Academy (Agustus 2026)</li>
+      <li>Bootcamp Sertifikasi Microsoft Office Excel, Word &amp; PowerPoint Specialist (Juli 2026)</li>
+      <li>English &amp; Test Preparation Bootcamp (Juli 2026)</li>
+      <li>UI/UX Design with Figma (Juli 2026)</li>
+      <li>Bootcamp Data Analyst with SQL, DQLab (Juli 2026)</li>
+    </ol>
+
+    <h2>Proyek</h2>
+    <hr>
+    <ol>
+      <li><b>HMSAM and Gamification Elements Analysis - English Practice Test Quiz App</b> (April 2026)<br />
+      Riset UX dengan model HMSAM untuk menganalisis elemen gamifikasi pada aplikasi pembelajaran mobile, dan merancang UI nya menggunakan Figma.</li>
+      <li><b>Flower Catalog Web Application</b> (November - Desember 2025)<br />
+      Aplikasi katalog bunga full stack (Spring Boot, Java, PostgreSQL) dengan autentikasi, CRUD, dashboard statistik, dan unit test proyek individu mata kuliah PBO.</li>
+    </ol>
   </main>
 
 </body>
